@@ -6,6 +6,7 @@
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
+require("identity-style-guide/dist/assets/js/main")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

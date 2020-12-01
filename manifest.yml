@@ -1,0 +1,9 @@
+---
+applications:
+- name: login_design_demo
+  path: .
+  command: bundle exec rake db:migrate && bundle exec rails s -p $PORT
+  buildpacks:
+    - nodejs_buildpack
+    - ruby_buildpack
+  services:

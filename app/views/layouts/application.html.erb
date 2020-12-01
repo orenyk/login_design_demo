@@ -7,9 +7,14 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag 'identity-style-guide/dist/assets/img/favicons/favicon.ico' %>
   </head>
 
   <body>
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+    <%= render 'usa_banner' %>
+    <div class="usa-overlay"></div>
+    <%= render 'header' %>
     <main class="usa-layout-docs usa-section" id="main-content">
       <div class="grid-container">
         <div class="usa-layout-docs__main usa-prose">

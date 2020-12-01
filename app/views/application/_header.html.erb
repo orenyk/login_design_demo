@@ -1,0 +1,45 @@
+<header class="usa-header usa-header--basic" role="banner">
+  <div class="usa-nav-container">
+    <div class="usa-navbar">
+      <div class="usa-logo" id="basic-logo">
+        <a href="javascript:;" title="Home" aria-label="Home">
+          <%= image_tag 'img/login-gov-logo.svg', class: 'usa-logo__img', role: 'img', alt: 'login.gov' %>
+          <em class="usa-logo__text">Optional Site Title</em>
+        </a>
+      </div>
+      <button class="usa-menu-btn">Menu</button>
+    </div>
+    <nav role="navigation" class="usa-nav" aria-role="Footer navigation">
+      <button class="usa-nav__close"><img src="/assets/img/close.svg" role="img" alt="Close"></button>
+      <ul class="usa-nav__primary usa-accordion">
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="javascript:;">
+            <span>Menu item</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link usa-current" href="javascript:;">
+            <span>Current item</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <button class="usa-accordion__button usa-nav__link" aria-controls="unique-id-1" aria-expanded="false">
+            <span>Section</span>
+          </button>
+          <ul id="unique-id-1" class="usa-nav__submenu" hidden="">
+            <li class="usa-nav__submenu-item">
+              <a href="javascript:;">
+                <span>First item</span>
+              </a>
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="javascript:;">
+                <span>Second item</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
